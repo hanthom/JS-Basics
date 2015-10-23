@@ -50,6 +50,7 @@ console.log('Welcome function:', welcome());
 //What is the difference between arguments and parameters?
 
   //Answer Here
+/* The difference between arguments and parameters are that parameters are the placeholders we declare when we create the function. The arguments are the values that are actually passed to the function when it is called. */
 
 
 //Next problem
@@ -57,7 +58,19 @@ console.log('Welcome function:', welcome());
 
 
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
-
+/* The falsy values are the following
+NaN
+Null
+Undefined
+''
+false
+The best way to check if something is falsy is by using an if statement that only takes in the value being tested (example below).
+if (x) {
+	console.log("Truthy");
+}
+else {
+	console.log("Falsy");
+}
 
   //Answer Here
 
