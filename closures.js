@@ -46,6 +46,13 @@ console.log(funcReturn('435-215-9248'));
 */
 
   //Code Here
+var x = 0;
+function makeCounter() {
+  return function add1() {
+      x = x + 1;
+      return x;
+  };
+}
   var count = makeCounter();
   count() // 1
   count() // 2
