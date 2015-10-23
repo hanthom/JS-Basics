@@ -71,7 +71,7 @@ if (x) {
 else {
 	console.log("Falsy");
 }
-
+*/
   //Answer Here
 
 
@@ -83,13 +83,15 @@ else {
 //Create a function called myName that returns your name
 
   //Code Here
-
+function myName() {
+	return 'Mike';
+}
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-
+var newMyName = myName();
 //Now alert the result of invoking newMyName
-
+alert(newMyName);
 
 
 //Next problem
@@ -99,9 +101,16 @@ else {
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
-
+function outerFn() {
+	return function anonFn() {
+		return 'Mike';
+	}
+}
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-
+var innerFn = outerFn();
 //Now invoke innerFn.
+console.log(innerFn);
+
+
