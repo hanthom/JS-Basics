@@ -51,7 +51,7 @@ function makeCounter() {
   var x = 0;
   return function add1() {
       x++;
-      return x;
+      return console.log(x);
   };
 }
   var count = makeCounter();
@@ -146,13 +146,14 @@ function fnCounter(param1, N) {
   Make the following code work
   */
 
-
+var x = -1;
 
 function assignFunc() {
-  var x = -1;
   return function() {
-    x++;
-    return x;
+    if (x >= -1) {
+      x++;
+      return console.log(x);
+    }
   }
 }
 
