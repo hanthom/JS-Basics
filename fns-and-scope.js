@@ -14,7 +14,7 @@ function isTyler(name) {
 		return false;
 	}
 }
-isTyler(name);
+console.log('isTyler function:',isTyler(name));
 
 //Next problem
 
@@ -28,7 +28,7 @@ function getName() {
 	var x = prompt("What is your name?");
 	return x;
 }
-getName();
+console.log('getName function:',getName());
 //Next Problem
 
 
@@ -37,8 +37,11 @@ getName();
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
-
-
+function welcome() {
+	var name = getName();
+	alert("Welcome " + name);
+}
+console.log('Welcome function:', welcome());
 //Next problem
 
 
