@@ -46,10 +46,11 @@ console.log(funcReturn('435-215-9248'));
 */
 
   //Code Here
-var x = 0;
+
 function makeCounter() {
+  var x = 0;
   return function add1() {
-      x = x + 1;
+      x++;
       return x;
   };
 }
@@ -70,8 +71,22 @@ function makeCounter() {
 */
 
   //Code Here
+function doSomething() {
+  console.log("Hello World");
+}
 
+function secondFunction(testFunc) {
+  var x = 0;
+  return function thirdCharm() {
+    if (x === 0) {
+       testFunc();
+       x++;
+    }   
+  }
+}
 
+var y = secondFunction(doSomething);
+y();
 
 //Next Problem
 
