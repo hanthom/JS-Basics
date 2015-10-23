@@ -95,7 +95,15 @@ y();
 /*
   Now, similar to the last problem, write a function called 'fnCounter' that accepts two parameters. The first parameter will be an anonymous function and the second parameter, 'N', will be a number. Now, in 'fnCounter', allow the anonymous funciton to be invoked 'N' number of times. After it's been invoked 'N' number of times, return 'STOP'.
 */
-
+function fnCounter(param1, N) {
+  var x = 0;
+  if (x < N) {
+    param1();
+  }
+  else {
+    return STOP;
+  }
+}
 
 
 //Next Problem
