@@ -144,15 +144,37 @@ function fnCounter(param1, N) {
 
 /*
   Make the following code work
+  */
 
-  funcArray[0]() //0
-  funcArray[1]() //1
-  funcArray[2]() //2
-  funcArray[3]() //3
-  funcArray[4]() //4
-  funcArray[5]() //5
 
+
+function assignFunc() {
+  var x = -1;
+  return function() {
+    x++;
+    return x;
+  }
+}
+
+var funcArray = [assignFunc(), assignFunc(), assignFunc(), assignFunc(), assignFunc(), assignFunc()];
+
+  funcArray[0](); //0
+  funcArray[1](); //1
+  funcArray[2](); //2
+  funcArray[3](); //3
+  funcArray[4](); //4
+  funcArray[5](); //5
+
+/*
   *Hint: Don't let this fool you. Break down what's really happening here.
 */
+
+
+
+
+
+
+
+
 
 
